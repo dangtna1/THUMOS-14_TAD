@@ -52,14 +52,23 @@ def main():
 
     # build dataset
     train_dataset = build_dataset(cfg.dataset.train, default_args=dict(logger=None))
-    # train_loader = build_dataloader(
-    #     train_dataset,
-    #     rank=args.rank,
-    #     world_size=args.world_size,
-    #     shuffle=True,
-    #     drop_last=True,
-    #     **cfg.solver.train,
-    # )
+    train_loader = build_dataloader(
+        train_dataset,
+        rank=1,  # dumb
+        world_size=1,  # dumb
+        shuffle=True,
+        drop_last=True,
+        **cfg.solver.train,
+    )
+
+    # Debug
+    batch = next(iter(train_loader))
+    print(batch.keys())
+    print(batch["inputs"].shape)
+    print(batch["masks"].shape)
+    print(batch["gt_segments"])
+    print(batch["gt_labels"])
+    print(batch["metas"])
 
 
 if __name__ == "__main__":
