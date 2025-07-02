@@ -1,9 +1,17 @@
 import os
 import sys
 
+sys.dont_write_bytecode = True
+path = os.path.join(os.path.dirname(__file__), "..")
+if path not in sys.path:
+    sys.path.insert(0, path)
+
+
 import argparse
 
 from mmengine.config import Config, DictAction
+
+from tad.datasets import build_dataset, build_dataloader
 
 
 def parse_args():
@@ -35,6 +43,22 @@ def main():
     # load config
     cfg = Config.fromfile(args.config)
     print(f"Loaded config from {args.config}")
+
+    # # setup logger
+    # logger = setup_logger("Train", save_dir=cfg.work_dir, distributed_rank=args.rank)
+    # logger.info(f"Using torch version: {torch.__version__}, CUDA version: {torch.version.cuda}")
+    # logger.info(f"Config: \n{cfg.pretty_text}")
+
+    # build dataset
+    train_dataset = build_dataset(cfg.dataset.train, default_args=dict(logger=None))
+    train_loader = build_dataloader(
+        train_dataset,
+        rank=args.rank,
+        world_size=args.world_size,
+        shuffle=True,
+        drop_last=True,
+        **cfg.solver.train,
+    )
 
 
 if __name__ == "__main__":
