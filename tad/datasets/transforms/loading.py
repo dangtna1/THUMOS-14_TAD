@@ -2,7 +2,7 @@
 import os
 import pickle
 
-# import random
+import random
 import torch
 
 # import pandas as pd
@@ -144,7 +144,7 @@ class RandomTrunc:
         self.channel_first = channel_first
 
     def trunc_features(self, feats, gt_segments, gt_labels, offset):
-        feta_len = feats.shape[0]
+        feat_len = feats.shape[0]
         num_segs = gt_segments.shape[0]
 
         trunc_len = self.trunc_len

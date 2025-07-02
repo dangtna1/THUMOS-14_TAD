@@ -1,6 +1,31 @@
+import torch
+
+# import torch.nn.functional as F
+# import torchvision
+# import scipy
+import numpy as np
+from collections.abc import Sequence
+from einops import rearrange, reduce
+
 from ..builder import PIPELINES
 
-from einops import rearrange, reduce
+
+def to_tensor(data):
+    """Convert objects of various python types to :obj:`torch.Tensor`.
+    Supported types are: :class:`numpy.ndarray`, :class:`torch.Tensor`,
+    :class:`Sequence`, :class:`int` and :class:`float`.
+    """
+    if isinstance(data, torch.Tensor):
+        return data
+    if isinstance(data, np.ndarray):
+        return torch.from_numpy(data)
+    if isinstance(data, Sequence):
+        return torch.tensor(data)
+    if isinstance(data, int):
+        return torch.LongTensor([data])
+    if isinstance(data, float):
+        return torch.FloatTensor([data])
+    raise TypeError(f"type {type(data)} cannot be converted to tensor.")
 
 
 @PIPELINES.register_module()
