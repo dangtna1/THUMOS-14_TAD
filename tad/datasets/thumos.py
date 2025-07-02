@@ -1,6 +1,6 @@
 import numpy as np
 from copy import deepcopy
-from .base import PaddingDataset
+from .base import PaddingDataset, filter_same_annotation
 from .builder import DATASETS
 
 

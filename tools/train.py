@@ -12,6 +12,7 @@ import argparse
 from mmengine.config import Config, DictAction
 
 from tad.datasets import build_dataset, build_dataloader
+from tad.datasets import transforms  # registers everything under transforms
 
 
 def parse_args():
@@ -51,14 +52,14 @@ def main():
 
     # build dataset
     train_dataset = build_dataset(cfg.dataset.train, default_args=dict(logger=None))
-    train_loader = build_dataloader(
-        train_dataset,
-        rank=args.rank,
-        world_size=args.world_size,
-        shuffle=True,
-        drop_last=True,
-        **cfg.solver.train,
-    )
+    # train_loader = build_dataloader(
+    #     train_dataset,
+    #     rank=args.rank,
+    #     world_size=args.world_size,
+    #     shuffle=True,
+    #     drop_last=True,
+    #     **cfg.solver.train,
+    # )
 
 
 if __name__ == "__main__":
