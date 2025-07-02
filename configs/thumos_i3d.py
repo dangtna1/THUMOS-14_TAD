@@ -1,11 +1,11 @@
 _base_ = [
     "./_base_/datasets/thumos-14/features_i3d_pad.py",  # dataset config
-    # "./_base_/models/actionformer.py",  # model config
+    "./_base_/models/actionformer.py",  # model config
 ]
 
-# model = dict(
-#     projection=dict(in_channels=2048, input_pdrop=0.2)
-# )  # override the projection only
+model = dict(
+    projection=dict(in_channels=2048, input_pdrop=0.2)
+)  # override the projection only
 
 solver = dict(
     train=dict(batch_size=2, num_workers=2),
