@@ -1,8 +1,8 @@
 from .builder import build_detector
 from .detectors import *
 from .backbones import *
+from .projections import *
 
-# from .projections import *
 # from .necks import *
 # from .dense_heads import *
 # from .roi_heads import *
