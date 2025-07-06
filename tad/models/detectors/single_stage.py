@@ -19,7 +19,7 @@ class SingleStageDetector(BaseDetector):
     """
 
     def __init__(self, backbone=None, projection=None, neck=None, rpn_head=None):
-        # super(SingleStageDetector, self).__init__()
+        super(SingleStageDetector, self).__init__()
 
         if backbone is not None:
             self.backbone = build_backbone(backbone)
