@@ -15,29 +15,29 @@ solver = dict(
     ema=True,
 )
 
-# optimizer = dict(type="AdamW", lr=1e-4, weight_decay=0.05, paramwise=True)
-# scheduler = dict(type="LinearWarmupCosineAnnealingLR", warmup_epoch=5, max_epoch=35)
+optimizer = dict(type="AdamW", lr=1e-4, weight_decay=0.05, paramwise=True)
+scheduler = dict(type="LinearWarmupCosineAnnealingLR", warmup_epoch=5, max_epoch=35)
 
-# inference = dict(load_from_raw_predictions=False, save_raw_prediction=False)
-# post_processing = dict(
-#     nms=dict(
-#         use_soft_nms=True,
-#         sigma=0.5,
-#         max_seg_num=2000,
-#         iou_threshold=0.1,  # does not matter when use soft nms
-#         min_score=0.001,
-#         multiclass=True,
-#         voting_thresh=0.7,  #  set 0 to disable
-#     ),
-#     save_dict=False,
-# )
+inference = dict(load_from_raw_predictions=False, save_raw_prediction=False)
+post_processing = dict(
+    nms=dict(
+        use_soft_nms=True,
+        sigma=0.5,
+        max_seg_num=2000,
+        iou_threshold=0.1,  # does not matter when use soft nms
+        min_score=0.001,
+        multiclass=True,
+        voting_thresh=0.7,  #  set 0 to disable
+    ),
+    save_dict=False,
+)
 
-# workflow = dict(
-#     logging_interval=20,
-#     checkpoint_interval=1,
-#     val_loss_interval=1,
-#     val_eval_interval=1,
-#     val_start_epoch=30,
-# )
+workflow = dict(
+    logging_interval=20,
+    checkpoint_interval=1,
+    val_loss_interval=1,
+    val_eval_interval=1,
+    val_start_epoch=30,
+)
 
-# work_dir = "exps/thumos/actionformer_i3d"
+work_dir = "exps/thumos/actionformer_i3d"
