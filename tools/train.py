@@ -13,6 +13,7 @@ from mmengine.config import Config, DictAction
 
 from tad.datasets import build_dataset, build_dataloader
 from tad.datasets import transforms  # registers everything under transforms
+from tad.models import build_detector
 
 
 def parse_args():
@@ -69,6 +70,9 @@ def main():
     print(batch["gt_segments"])
     print(batch["gt_labels"])
     print(batch["metas"])
+
+    # build model
+    model = build_detector(cfg.model)
 
 
 if __name__ == "__main__":
