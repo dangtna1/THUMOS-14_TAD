@@ -8,8 +8,7 @@ from ..builder import (
 )
 from .base import BaseDetector
 
-# from ..utils.post_processing import batched_nms, convert_to_seconds
-from ..utils.post_processing import convert_to_seconds
+from ..utils.post_processing import batched_nms, convert_to_seconds
 
 
 @DETECTORS.register_module()
@@ -142,10 +141,10 @@ class SingleStageDetector(BaseDetector):
                 labels = cls_idxs
 
             # if not sliding window, do nms, TODO: REMEMBER TO UNCOMMENT THIS
-            # if post_cfg.sliding_window == False and post_cfg.nms is not None:
-            #     segments, scores, labels = batched_nms(
-            #         segments, scores, labels, **post_cfg.nms
-            #     )
+            if post_cfg.nms is not None:
+                segments, scores, labels = batched_nms(
+                    segments, scores, labels, **post_cfg.nms
+                )
 
             video_id = metas[i]["video_name"]
 
