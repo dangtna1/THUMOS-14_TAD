@@ -35,8 +35,9 @@ def train_one_epoch(
         curr_det_lr = scheduler.get_last_lr()[-1]
 
         # forward pass
-        with torch.cuda.amp.autocast(dtype=torch.float16, enabled=use_amp):
-            losses = model(**data_dict, return_loss=True)
+        with torch.autocast(device_type="cpu", dtype=torch.bfloat16, enabled=False):
+            logger.info("training...")
+            losses = model(**data_dict, return_loss=True)  # forward batch to model
 
         # compute the gradients
         if use_amp:
@@ -71,7 +72,7 @@ def train_one_epoch(
         #         losses_tracker[key] = AverageMeter()
         #     losses_tracker[key].update(value.item())
 
-        # # printing each logging_interval
+        # printing each logging_interval
         # if ((iter_idx != 0) and (iter_idx % logging_interval) == 0) or (
         #     (iter_idx + 1) == num_iters
         # ):
@@ -91,7 +92,7 @@ def train_one_epoch(
         #     block5 = "mem={:.0f}MB".format(
         #         torch.cuda.max_memory_allocated() / 1024.0 / 1024.0
         #     )
-        #     # logger.info("  ".join([block1, block2, "  ".join(block3), block4, block5]))
+        #     logger.info("  ".join([block1, block2, "  ".join(block3), block4, block5]))
 
 
 def val_one_epoch(
@@ -115,7 +116,8 @@ def val_one_epoch(
 
     model.eval()
     for data_dict in tqdm.tqdm(val_loader, disable=(rank != 0)):
-        with torch.cuda.amp.autocast(dtype=torch.float16, enabled=use_amp):
+        with torch.autocast(device_type="cpu", dtype=torch.bfloat16, enabled=False):
+            # with torch.cuda.amp.autocast(dtype=torch.float16, enabled=use_amp):
             with torch.no_grad():
                 losses = model(**data_dict, return_loss=True)
 
