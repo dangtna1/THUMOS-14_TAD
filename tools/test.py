@@ -57,8 +57,6 @@ def main():
     test_dataset = build_dataset(cfg.dataset.train, default_args=dict(logger=logger)) # change to test for real testing
     test_loader = build_dataloader(
         test_dataset,
-        rank=0,
-        world_size=0,
         shuffle=False,
         drop_last=False,
         **cfg.solver.test,

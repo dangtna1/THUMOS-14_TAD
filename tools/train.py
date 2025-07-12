@@ -14,8 +14,6 @@ from tad.datasets import build_dataset, build_dataloader
 from tad.models import build_detector
 from tad.cores import (
     train_one_epoch,
-    # val_one_epoch,
-    # eval_one_epoch,
     build_optimizer,
     build_scheduler,
 )
@@ -64,11 +62,9 @@ def main():
     logger.info(f"Config: \n{cfg.pretty_text}")
 
     # build dataset
-    train_dataset = build_dataset(cfg.dataset.train, default_args=dict(logger=None))
+    train_dataset = build_dataset(cfg.dataset.train, default_args=dict(logger=logger))
     train_loader = build_dataloader(
         train_dataset,
-        rank=1,  # dumb
-        world_size=1,  # dumb
         shuffle=True,
         drop_last=True,
         **cfg.solver.train,
@@ -95,18 +91,8 @@ def main():
     else:
         model_ema = None
 
-    # AMP: automatic mixed precision
-    # use_amp = getattr(cfg.solver, "amp", False)
-    #
-    # if use_amp:
-    #     scaler = GradScaler()
-    # else:
-    #     scaler = None
-
-    scaler = None
-
     # build optimizer and scheduler
-    optimizer = build_optimizer(cfg.optimizer, model, logger=None)
+    optimizer = build_optimizer(cfg.optimizer, model, logger=logger)
     scheduler, max_epoch = build_scheduler(cfg.scheduler, optimizer, len(train_loader))
 
     # override the max_epoch
@@ -114,11 +100,10 @@ def main():
 
     # train the detector
     logger.info("Training Starts...\n")
+    logger.info(max_epoch)
     # val_loss_best = 1e6
     # val_start_epoch = cfg.workflow.get("val_start_epoch", 0)
-    for epoch in range(0, 1):
-        # train_loader.sampler.set_epoch(epoch) # FOR DPP
-
+    for epoch in range(0, max_epoch):
         # train for one epoch
         train_one_epoch(
             train_loader,
@@ -130,7 +115,7 @@ def main():
             model_ema=model_ema,
             clip_grad_l2norm=cfg.solver.clip_grad_norm,
             logging_interval=cfg.workflow.logging_interval,
-            scaler=scaler,
+            scaler=None,
         )
 
         # save checkpoint
