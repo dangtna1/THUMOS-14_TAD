@@ -5,7 +5,7 @@ import pickle
 import random
 import torch
 
-# import pandas as pd
+import pandas as pd
 import numpy as np
 
 from ..builder import PIPELINES
