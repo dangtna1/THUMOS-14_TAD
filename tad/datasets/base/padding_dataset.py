@@ -94,10 +94,10 @@ class PaddingDataset:
             class_map = [item.rstrip("\n") for item in lines]
         return class_map
 
-    def get_gt(self):
+    def get_gt(self, video_info):
         pass
 
-    def __getitem__(self):
+    def __getitem__(self, index):
         pass
 
     def __len__(self):
