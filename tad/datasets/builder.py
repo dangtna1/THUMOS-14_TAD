@@ -14,36 +14,12 @@ def build_dataset(cfg, default_args=None):
 
 
 def build_dataloader(
-    dataset, batch_size, rank, world_size, shuffle=False, drop_last=False, **kwargs
+    dataset, batch_size, shuffle=False, drop_last=False, **kwargs
 ):
-    # WAY 1: Distributed sampling
-    # sampler = torch.utils.data.distributed.DistributedSampler(
-    #     dataset,
-    #     num_replicas=world_size,
-    #     rank=rank,
-    #     shuffle=shuffle,
-    #     drop_last=drop_last,
-    # )
-
-    # # Ensure that the batch size is divisible by the world size to make sure each GPU gets an equal number of samples
-    # assert (
-    #     batch_size % world_size == 0
-    # ), f"batch size {batch_size} should be divided by world size {world_size}"
-
-    # dataloader = torch.utils.data.DataLoader(
-    #     dataset,
-    #     batch_size=batch_size // world_size,  # each GPU gets this batch size
-    #     collate_fn=collate,
-    #     pin_memory=True,
-    #     sampler=sampler,
-    #     **kwargs,
-    # )
-
-    # Way 2: Without distribution
     dataloader = torch.utils.data.DataLoader(
         dataset,
         batch_size=batch_size,
-        shuffle=shuffle,  # shuffle works here normally
+        shuffle=shuffle,
         drop_last=drop_last,
         collate_fn=collate,
         # pin_memory=True, # used if have accelerator
