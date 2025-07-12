@@ -54,7 +54,9 @@ def main():
     logger.info(f"Config: \n{cfg.pretty_text}")
 
     # build dataset
-    test_dataset = build_dataset(cfg.dataset.train, default_args=dict(logger=logger)) # change to test for real testing
+    test_dataset = build_dataset(
+        cfg.dataset.test, default_args=dict(logger=logger)
+    )  # change to test for real testing
     test_loader = build_dataloader(
         test_dataset,
         shuffle=False,
