@@ -71,13 +71,13 @@ def main():
     )
 
     # Debug
-    # batch = next(iter(train_loader))
-    # print(batch.keys())
-    # print(batch["inputs"].shape)
-    # print(batch["masks"].shape)
-    # print(batch["gt_segments"])
-    # print(batch["gt_labels"])
-    # print(batch["metas"])
+    batch = next(iter(train_loader))
+    print(batch.keys())
+    print(batch["inputs"].shape)
+    print(batch["masks"].shape)
+    print(batch["gt_segments"])
+    print(batch["gt_labels"])
+    print(batch["metas"])
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -126,46 +126,46 @@ def main():
                 model, model_ema, optimizer, scheduler, epoch, work_dir=cfg.work_dir
             )
 
-        # val for one epoch
-        # if epoch >= val_start_epoch:
-        #     if (cfg.workflow.val_loss_interval > 0) and (
-        #         (epoch + 1) % cfg.workflow.val_loss_interval == 0
-        #     ):
-        #         val_loss = val_one_epoch(
-        #             val_loader,
-        #             model,
-        #             logger,
-        #             0,
-        #             epoch,
-        #             model_ema=model_ema,
-        #             use_amp=use_amp,
-        #         )
-        #
-        #         # save the best checkpoint
-        #         if val_loss < val_loss_best:
-        #             logger.info(f"New best epoch {epoch}")
-        #             val_loss_best = val_loss
-        #             if 0 == 0:
-        #                 save_best_checkpoint(
-        #                     model, model_ema, epoch, work_dir=cfg.work_dir
-        #                 )
+    # val for one epoch
+    # if epoch >= val_start_epoch:
+    #     if (cfg.workflow.val_loss_interval > 0) and (
+    #         (epoch + 1) % cfg.workflow.val_loss_interval == 0
+    #     ):
+    #         val_loss = val_one_epoch(
+    #             val_loader,
+    #             model,
+    #             logger,
+    #             0,
+    #             epoch,
+    #             model_ema=model_ema,
+    #             use_amp=use_amp,
+    #         )
 
-        # eval for one epoch
-        # if epoch >= val_start_epoch:
-        #     if (cfg.workflow.val_eval_interval > 0) and (
-        #         (epoch + 1) % cfg.workflow.val_eval_interval == 0
-        #     ):
-        #         eval_one_epoch(
-        #             test_loader,
-        #             model,
-        #             cfg,
-        #             logger,
-        #             args.rank,
-        #             model_ema=model_ema,
-        #             use_amp=use_amp,
-        #             world_size=args.world_size,
-        #             not_eval=args.not_eval,
-        #         )
+    #         # save the best checkpoint
+    #         if val_loss < val_loss_best:
+    #             logger.info(f"New best epoch {epoch}")
+    #             val_loss_best = val_loss
+    #             if 0 == 0:
+    #                 save_best_checkpoint(
+    #                     model, model_ema, epoch, work_dir=cfg.work_dir
+    #                 )
+
+    # eval for one epoch
+    # if epoch >= val_start_epoch:
+    #     if (cfg.workflow.val_eval_interval > 0) and (
+    #         (epoch + 1) % cfg.workflow.val_eval_interval == 0
+    #     ):
+    #         eval_one_epoch(
+    #             test_loader,
+    #             model,
+    #             cfg,
+    #             logger,
+    #             args.rank,
+    #             model_ema=model_ema,
+    #             use_amp=use_amp,
+    #             world_size=args.world_size,
+    #             not_eval=args.not_eval,
+    #         )
 
 
 if __name__ == "__main__":

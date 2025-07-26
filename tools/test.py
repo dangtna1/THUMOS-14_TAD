@@ -3,7 +3,6 @@ import sys
 
 sys.dont_write_bytecode = True
 path = os.path.join(os.path.dirname(__file__), "..")
-print(path)
 if path not in sys.path:
     sys.path.insert(0, path)
 
