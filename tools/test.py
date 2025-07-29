@@ -104,7 +104,7 @@ def main():
         model_ema=None,  # since we have loaded the ema model above
         use_amp=False,
         world_size=0,
-        not_eval=True,
+        not_eval=False,
     )
     logger.info("Testing Over...\n")
 

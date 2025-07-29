@@ -1,6 +1,6 @@
 dataset_type = "CharadesPaddingDataset"
-annotation_path = "data/charades/annotations/sample_charades.json"  # change to sample_charades.json later
-class_map = "data/charades/annotations/sample_category_idx.txt"  # should get from the sample file instead of the full dataset
+annotation_path = "data/charades/annotations/most_sample_charades.json"  # change
+class_map = "data/charades/annotations/most_sample_category_idx.txt"  # change
 data_path = "data/charades/features/i3d_charades_finetuned_stride8/"
 block_list = data_path + "missing_files.txt"
 

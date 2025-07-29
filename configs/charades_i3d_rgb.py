@@ -40,7 +40,7 @@ solver = dict(
 )
 
 optimizer = dict(type="AdamW", lr=1e-4, weight_decay=0.05, paramwise=True)
-scheduler = dict(type="LinearWarmupCosineAnnealingLR", warmup_epoch=5, max_epoch=20)
+scheduler = dict(type="LinearWarmupCosineAnnealingLR", warmup_epoch=5, max_epoch=30)
 
 inference = dict(load_from_raw_predictions=False, save_raw_prediction=True)
 post_processing = dict(
@@ -66,4 +66,8 @@ workflow = dict(
     end_epoch=15,
 )
 
-work_dir = "exps/charades/actionformer_i3d_rgb"
+sample_type = (
+    "whole_video_most_sample"  # Change this every time change the sample dataset
+)
+
+work_dir = f"exps/charades/actionformer_i3d_rgb/{sample_type}/"
