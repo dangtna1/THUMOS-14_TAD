@@ -98,12 +98,29 @@ def main():
     # override the max_epoch
     # max_epoch = cfg.workflow.get("end_epoch", max_epoch)
 
+    # resume: reset epoch, load checkpoint / best rmse
+    if args.resume != None:
+        logger.info("Resume training from: {}".format(args.resume))
+        checkpoint = torch.load(args.resume, map_location="cpu")
+        resume_epoch = checkpoint["epoch"]
+        logger.info("Resume epoch is {}".format(resume_epoch))
+        model.load_state_dict(checkpoint["state_dict"])
+        optimizer.load_state_dict(checkpoint["optimizer"])
+        scheduler.load_state_dict(checkpoint["scheduler"])
+        if model_ema != None:
+            model_ema.module.load_state_dict(checkpoint["state_dict_ema"])
+
+        del checkpoint  #  save memory if the model is very large such as ViT-g
+        torch.cuda.empty_cache()
+    else:
+        resume_epoch = -1
+
     # train the detector
     logger.info("Training Starts...\n")
     logger.info(max_epoch)
     # val_loss_best = 1e6
     # val_start_epoch = cfg.workflow.get("val_start_epoch", 0)
-    for epoch in range(0, max_epoch):
+    for epoch in range(resume_epoch + 1, max_epoch):
         # train for one epoch
         train_one_epoch(
             train_loader,
