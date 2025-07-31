@@ -43,7 +43,7 @@ class CharadesPaddingDataset(PaddingDataset):
                 fps=self.fps,
                 duration=video_info["duration"],
                 offset_frames=self.offset_frames,
-                **video_anno,
+                **video_anno, # unpack -> gt_segments, gt_labels
             )
         )
         return results
