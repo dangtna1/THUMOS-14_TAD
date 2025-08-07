@@ -1,0 +1,17 @@
+###### Requirements without Version Specifiers ######
+mmengine
+wandb
+scipy
+einops
+pandas
+tqdm
+ninja
+imgaug
+pytorchvideo
+
+###### Requirements with Version Specifiers ######
+numpy==1.23.5
+gdown==5.1.0
+
+###### Custom Package Requirements ######
+tad/models/utils/post_processing/nms
