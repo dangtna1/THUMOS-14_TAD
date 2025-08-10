@@ -1,5 +1,6 @@
 from .loading import LoadFeats, RandomTrunc
 from .formatting import ConvertToTensor, Rearrange, Collect, Padding
+from .videotransforms import *
 
 __all__ = [
     "LoadFeats",
@@ -8,4 +9,5 @@ __all__ = [
     "Rearrange",
     "Collect",
     "Padding",
+    "CenterCrop",
 ]
