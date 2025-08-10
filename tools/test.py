@@ -82,7 +82,7 @@ def main():
         else:
             checkpoint_path = os.path.join(cfg.work_dir, "checkpoint/best.pth")
         logger.info("Loading checkpoint from: {}".format(checkpoint_path))
-        checkpoint = torch.load(checkpoint_path)
+        checkpoint = torch.load(checkpoint_path, weights_only=True)
         logger.info("Checkpoint is epoch {}.".format(checkpoint["epoch"]))
 
         # Model EMA
