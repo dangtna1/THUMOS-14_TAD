@@ -74,13 +74,22 @@ def run(
 
         b, c, t, h, w = inputs.shape  # b = batch = 1
         if t > 1600:
-            # features = []
-            # for start in range(1, t-56, 1600):
-            #     end = min(t-1, start+1600+56)
-            #     start = max(1, start-48)
-            #     ip = Variable(torch.from_numpy(inputs.numpy()[:,:,start:end]).cuda(), volatile=True)
-            #     features.append(i3d.extract_features(ip).squeeze(0).permute(1,2,3,0).data.cpu().numpy())
-            # np.save(os.path.join(save_dir, name[0]), np.concatenate(features, axis=0))
+            features = []
+            for start in range(1, t - 56, 1600):
+                end = min(t - 1, start + 1600 + 56)
+                start = max(1, start - 48)
+                ip = Variable(
+                    torch.from_numpy(inputs.numpy()[:, :, start:end]).cuda(),
+                    volatile=True,
+                )
+                features.append(
+                    i3d.extract_features(ip)
+                    .squeeze(0)
+                    .permute(1, 2, 3, 0)
+                    .data.cpu()
+                    .numpy()
+                )
+            np.save(os.path.join(save_dir, name[0]), np.concatenate(features, axis=0))
             print("Oh no, what happened?")
         else:
             with torch.no_grad():
