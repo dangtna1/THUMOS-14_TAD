@@ -66,8 +66,6 @@ workflow = dict(
     end_epoch=15,
 )
 
-sample_type = (
-    "whole_video_most_sample"  # Change this every time change the sample dataset
-)
+sample_type = "most_common_classes"  # Change this every time change the sample dataset
 
 work_dir = f"exps/charades/actionformer_i3d_rgb/{sample_type}/"
