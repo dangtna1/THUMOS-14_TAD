@@ -1,0 +1,5686 @@
+{
+  "version": "Charades_v1_Sample",
+  "database": {
+    "028CE": {
+      "duration": 20.0,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            2.0,
+            11.0
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "03EW0": {
+      "duration": 31.12,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            2.6
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "06EDS": {
+      "duration": 35.46,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            23.6,
+            36.0
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "08AQS": {
+      "duration": 32.33,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            29.1,
+            33.0
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "08LOY": {
+      "duration": 28.04,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            5.7,
+            21.9
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "0C5IQ": {
+      "duration": 19.96,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            1.3,
+            21.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "0CX32": {
+      "duration": 33.17,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            6.1,
+            11.3
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "0DD62": {
+      "duration": 17.21,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            2.9,
+            18.0
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "0IAGO": {
+      "duration": 28.38,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            10.0,
+            15.0
+          ],
+          "label": "Standing on a chair"
+        },
+        {
+          "segment": [
+            13.8,
+            24.0
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "0IJ8T": {
+      "duration": 31.17,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            4.1,
+            11.7
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "0JP8Q": {
+      "duration": 28.04,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            16.7,
+            29.0
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "0M1PW": {
+      "duration": 19.42,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            20.0
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "0M9ZO": {
+      "duration": 30.79,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            10.5,
+            17.3
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "0O6RK": {
+      "duration": 30.21,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            2.8,
+            17.7
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "0OMFD": {
+      "duration": 32.04,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            23.8,
+            33.0
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "0RI7C": {
+      "duration": 31.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            7.2,
+            32.0
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "0RROG": {
+      "duration": 27.38,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            10.6
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "11L5M": {
+      "duration": 29.21,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            15.5,
+            20.4
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "12VVC": {
+      "duration": 20.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            16.7
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "13AUQ": {
+      "duration": 25.38,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            26.0
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "15OH5": {
+      "duration": 37.46,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            23.3,
+            36.5
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "1BXYR": {
+      "duration": 5.62,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            7.0
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "1D31Z": {
+      "duration": 38.67,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            11.9,
+            30.3
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "1LSEQ": {
+      "duration": 27.21,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            9.7,
+            28.0
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "1PILH": {
+      "duration": 35.58,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            27.5
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "1QP1S": {
+      "duration": 33.67,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            27.7,
+            35.0
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "1V30R": {
+      "duration": 31.83,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            33.0
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "1ZAN8": {
+      "duration": 30.96,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            9.9,
+            22.9
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "1ZB73": {
+      "duration": 30.5,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            8.3
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "1ZEJJ": {
+      "duration": 21.42,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            10.4,
+            18.6
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "23YS1": {
+      "duration": 60.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            29.1,
+            43.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "26YPV": {
+      "duration": 21.12,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            22.0
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "297S4": {
+      "duration": 54.5,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            6.2,
+            26.5
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "2ADJI": {
+      "duration": 24.54,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            5.2,
+            9.5
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "2GGH3": {
+      "duration": 27.92,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            1.5,
+            7.2
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "2H9YB": {
+      "duration": 35.0,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            2.0,
+            22.8
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "2JYRQ": {
+      "duration": 28.04,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            15.4,
+            23.8
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "2P2ZC": {
+      "duration": 28.12,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            20.3
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "2ZFG4": {
+      "duration": 23.67,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            1.4,
+            25.0
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "31YNM": {
+      "duration": 30.38,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            15.1
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "334W9": {
+      "duration": 20.71,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            12.7
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "35ZZP": {
+      "duration": 36.42,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            18.4,
+            37.0
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "3AEF5": {
+      "duration": 29.67,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            16.1,
+            31.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "3AHLN": {
+      "duration": 22.62,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            6.7,
+            13.0
+          ],
+          "label": "Fixing a light"
+        },
+        {
+          "segment": [
+            4.1,
+            14.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "3CW6P": {
+      "duration": 30.21,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            15.6,
+            20.9
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "3IMTV": {
+      "duration": 35.62,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            23.9
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "3IS9Y": {
+      "duration": 34.17,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            8.8,
+            17.0
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "3OZUX": {
+      "duration": 31.0,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            1.1,
+            11.4
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "3P055": {
+      "duration": 43.0,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            29.7,
+            40.0
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "3W6CP": {
+      "duration": 30.75,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            14.3,
+            32.0
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "3YY88": {
+      "duration": 29.42,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            12.0,
+            22.7
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "40TYU": {
+      "duration": 26.79,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            9.7,
+            14.6
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "41SB2": {
+      "duration": 23.42,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            2.0,
+            11.0
+          ],
+          "label": "Standing on a chair"
+        },
+        {
+          "segment": [
+            3.0,
+            10.0
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "43ODF": {
+      "duration": 30.08,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            31.0
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "47ZXN": {
+      "duration": 32.29,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            19.5,
+            30.1
+          ],
+          "label": "Fixing a light"
+        },
+        {
+          "segment": [
+            18.5,
+            31.6
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "4ALLQ": {
+      "duration": 36.25,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            24.6
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "4GHHK": {
+      "duration": 33.33,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            11.5,
+            32.2
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "4I00F": {
+      "duration": 28.08,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            29.0
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "4JXAK": {
+      "duration": 21.54,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            12.8,
+            23.0
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "4KK20": {
+      "duration": 30.67,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            24.4,
+            32.0
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "4MPPQ": {
+      "duration": 38.79,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            39.3
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "4O9A6": {
+      "duration": 31.46,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            21.7
+          ],
+          "label": "Fixing a light"
+        },
+        {
+          "segment": [
+            0.0,
+            25.3
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "4RLYA": {
+      "duration": 31.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            26.8,
+            32.0
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "4RT06": {
+      "duration": 31.08,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            13.9,
+            32.0
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "4T97L": {
+      "duration": 29.79,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            13.5,
+            31.0
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "51ZY5": {
+      "duration": 23.12,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            7.7,
+            15.8
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "52IYR": {
+      "duration": 34.17,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            35.0
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "52KNA": {
+      "duration": 34.46,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            8.0,
+            17.0
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "5657O": {
+      "duration": 30.96,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            16.1,
+            32.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "57A1A": {
+      "duration": 18.75,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            11.0,
+            16.0
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "5AYUN": {
+      "duration": 41.88,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            20.6,
+            39.1
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "5GP8M": {
+      "duration": 32.75,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            10.1,
+            30.9
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "5HSKK": {
+      "duration": 31.12,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            15.3,
+            20.4
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "5LFGO": {
+      "duration": 36.67,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            15.6
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "5NE5A": {
+      "duration": 27.54,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            13.0,
+            29.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "5NJRH": {
+      "duration": 30.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            2.4,
+            30.1
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "5RPZA": {
+      "duration": 27.96,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            29.0
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "5RY3S": {
+      "duration": 30.71,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            12.3,
+            22.3
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "5S1WQ": {
+      "duration": 31.46,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            2.6
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "5SJ89": {
+      "duration": 31.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            2.1,
+            24.4
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "61XR6": {
+      "duration": 33.62,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            22.1,
+            35.0
+          ],
+          "label": "Standing on a chair"
+        },
+        {
+          "segment": [
+            23.2,
+            32.4
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "662ZU": {
+      "duration": 35.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            6.3,
+            36.0
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "68YR6": {
+      "duration": 30.88,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            21.0,
+            32.0
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "6APUA": {
+      "duration": 30.71,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            18.1
+          ],
+          "label": "Standing on a chair"
+        },
+        {
+          "segment": [
+            0.6,
+            16.9
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "6FASX": {
+      "duration": 33.08,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            5.1,
+            25.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "6KJGX": {
+      "duration": 30.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            6.2,
+            12.8
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "6LBDM": {
+      "duration": 51.75,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            28.0,
+            48.4
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "6R7QY": {
+      "duration": 30.42,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            4.3
+          ],
+          "label": "Standing on a chair"
+        },
+        {
+          "segment": [
+            2.1,
+            21.4
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "6UZLM": {
+      "duration": 30.75,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            32.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "6W82I": {
+      "duration": 28.92,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            30.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "705RV": {
+      "duration": 30.42,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            20.2
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "735W9": {
+      "duration": 31.08,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            23.6
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "73J9F": {
+      "duration": 23.58,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            7.4,
+            25.0
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "74WSB": {
+      "duration": 30.62,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            5.7
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "75KQ6": {
+      "duration": 29.42,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            15.5,
+            30.0
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "76R37": {
+      "duration": 31.83,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            20.8,
+            25.8
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "77UTO": {
+      "duration": 31.79,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            25.2,
+            33.0
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "7K9XM": {
+      "duration": 129.29,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            51.0,
+            108.7
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "7KHIH": {
+      "duration": 10.58,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            10.5
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "7LJ4G": {
+      "duration": 33.79,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            3.6,
+            27.7
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "7QEQN": {
+      "duration": 7.46,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            4.2
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "7UU9S": {
+      "duration": 10.54,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            12.0
+          ],
+          "label": "Fixing a light"
+        },
+        {
+          "segment": [
+            0.0,
+            12.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "7VSIV": {
+      "duration": 30.42,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            11.3
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "7YV59": {
+      "duration": 35.5,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.8,
+            35.9
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "83J53": {
+      "duration": 30.0,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            18.2
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "87EXS": {
+      "duration": 31.42,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            2.1,
+            13.8
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "8JR94": {
+      "duration": 32.38,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            6.9,
+            31.3
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "8M5VK": {
+      "duration": 33.54,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            13.3
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "8QL4N": {
+      "duration": 22.0,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            13.0
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "8QWE4": {
+      "duration": 29.08,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            9.2,
+            21.1
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "8TSH9": {
+      "duration": 30.67,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            32.0
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "9335E": {
+      "duration": 47.33,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            1.1,
+            21.4
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "96GIQ": {
+      "duration": 30.33,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            6.4
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "9CDB6": {
+      "duration": 30.46,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            2.3,
+            15.4
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "9FH1E": {
+      "duration": 32.75,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            3.2,
+            31.0
+          ],
+          "label": "Fixing a light"
+        },
+        {
+          "segment": [
+            0.0,
+            34.0
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "9I3HW": {
+      "duration": 20.62,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            2.6,
+            21.3
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "9L71W": {
+      "duration": 32.12,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            30.2,
+            33.0
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "9N76L": {
+      "duration": 37.21,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            23.2
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "9NWSD": {
+      "duration": 27.88,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            5.3,
+            25.7
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "9UZEY": {
+      "duration": 16.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            11.0,
+            17.0
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "9YLUH": {
+      "duration": 30.88,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            2.0,
+            32.0
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "A18EX": {
+      "duration": 30.42,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            21.8
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "A2771": {
+      "duration": 30.92,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            1.2,
+            32.0
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "A3M94": {
+      "duration": 38.79,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            4.4,
+            40.0
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "A6CF6": {
+      "duration": 22.33,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            6.6
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "ACJR6": {
+      "duration": 26.96,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            28.0
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "AMT7R": {
+      "duration": 30.08,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            18.2,
+            23.1
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "ARWNX": {
+      "duration": 30.54,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            5.8,
+            11.6
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "AXZVQ": {
+      "duration": 30.71,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            2.3,
+            32.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "AYZS4": {
+      "duration": 49.62,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            36.2,
+            51.0
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "AZFKK": {
+      "duration": 30.08,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            3.4
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "B8PQL": {
+      "duration": 24.62,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            6.9,
+            16.3
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "BFW9A": {
+      "duration": 28.75,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            10.5,
+            27.5
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "BJ7YW": {
+      "duration": 13.58,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            9.4,
+            15.0
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "BJO5X": {
+      "duration": 31.54,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            1.6,
+            29.9
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "BW2OT": {
+      "duration": 30.88,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            12.2,
+            31.2
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "C1TSW": {
+      "duration": 39.17,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            40.0
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "C41G7": {
+      "duration": 31.08,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            10.9,
+            24.4
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "C9ISQ": {
+      "duration": 21.42,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            3.9,
+            16.9
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "CAND1": {
+      "duration": 38.04,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            7.1,
+            23.9
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "CBZEP": {
+      "duration": 7.08,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            8.0
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "CG7FL": {
+      "duration": 18.58,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            11.4,
+            18.4
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "CI6H7": {
+      "duration": 15.96,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            2.2,
+            7.3
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "CIWWB": {
+      "duration": 30.08,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            30.5
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "CSQLJ": {
+      "duration": 31.38,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            1.5,
+            30.8
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "CY2J2": {
+      "duration": 50.83,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            13.3,
+            42.4
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "CZPFO": {
+      "duration": 39.54,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            3.5,
+            29.5
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "D3N3P": {
+      "duration": 17.04,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            13.5,
+            18.0
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "D6D85": {
+      "duration": 30.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            22.0
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "D7PI9": {
+      "duration": 30.75,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            32.0
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "D8OSC": {
+      "duration": 27.79,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            5.9,
+            11.1
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "D9DSH": {
+      "duration": 30.54,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            31.0
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "DFPOJ": {
+      "duration": 30.42,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            28.4,
+            31.0
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "DKR7B": {
+      "duration": 31.08,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            3.9
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "DLOS7": {
+      "duration": 41.42,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            9.5
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "DQ6U7": {
+      "duration": 28.96,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            6.1,
+            30.0
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "DR1ZU": {
+      "duration": 13.54,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            5.7
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "DSWBA": {
+      "duration": 24.75,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            9.0,
+            22.5
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "DSXEN": {
+      "duration": 30.92,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            19.1,
+            32.0
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "DTUJD": {
+      "duration": 16.0,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            1.1,
+            11.4
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "DU416": {
+      "duration": 30.58,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            32.0
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "DV6OZ": {
+      "duration": 42.04,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            15.7,
+            41.2
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "DZUR7": {
+      "duration": 38.83,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            40.0
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "DZVTI": {
+      "duration": 29.08,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            30.0
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "E1U37": {
+      "duration": 10.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            6.6,
+            11.0
+          ],
+          "label": "Throwing a box somewhere"
+        },
+        {
+          "segment": [
+            0.0,
+            11.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "E3UFX": {
+      "duration": 12.38,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            11.6
+          ],
+          "label": "Fixing a light"
+        },
+        {
+          "segment": [
+            0.0,
+            12.1
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "E6PSM": {
+      "duration": 42.0,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            23.2,
+            28.3
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "E8JEJ": {
+      "duration": 22.08,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            5.6,
+            19.1
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "ECGY1": {
+      "duration": 20.88,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            9.5,
+            19.2
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "ERC0T": {
+      "duration": 31.54,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            12.8,
+            26.5
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "EVHAZ": {
+      "duration": 34.33,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            14.4
+          ],
+          "label": "Standing on a chair"
+        },
+        {
+          "segment": [
+            0.0,
+            14.4
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "EWO2A": {
+      "duration": 31.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            8.7,
+            22.7
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "EXB02": {
+      "duration": 30.08,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            31.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "F3RM9": {
+      "duration": 22.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            3.6,
+            21.0
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "FC7C1": {
+      "duration": 32.0,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            32.9
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "FFBK3": {
+      "duration": 33.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            3.3,
+            19.0
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "FNM0L": {
+      "duration": 30.58,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            10.1,
+            17.5
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "FNRYR": {
+      "duration": 30.75,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            32.0
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "FP5MM": {
+      "duration": 30.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            15.1,
+            27.8
+          ],
+          "label": "Washing a window"
+        },
+        {
+          "segment": [
+            15.7,
+            26.7
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "FU5NY": {
+      "duration": 20.33,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            3.5,
+            12.1
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "FX7ZY": {
+      "duration": 20.46,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            16.0,
+            21.0
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "FYJHS": {
+      "duration": 30.79,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            18.8,
+            28.5
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "G1NFB": {
+      "duration": 33.21,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            14.3,
+            26.0
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "G2JR9": {
+      "duration": 31.0,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.3,
+            25.0
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "G2QBV": {
+      "duration": 30.21,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            11.3,
+            19.9
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "G3OUM": {
+      "duration": 32.0,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            22.7,
+            28.3
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "G5KWF": {
+      "duration": 30.67,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            32.0
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "G82VI": {
+      "duration": 34.46,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            12.2,
+            17.9
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "G8E71": {
+      "duration": 39.33,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            10.8,
+            38.6
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "GANC6": {
+      "duration": 27.38,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            1.8,
+            6.4
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "GI61S": {
+      "duration": 23.08,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            24.0
+          ],
+          "label": "Fixing a light"
+        },
+        {
+          "segment": [
+            0.0,
+            24.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "GKVBS": {
+      "duration": 39.75,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            35.0
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "GLGQJ": {
+      "duration": 39.46,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            17.6
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "GLSU2": {
+      "duration": 31.08,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            16.3
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "GMQBY": {
+      "duration": 30.08,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            31.0
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "GNPSK": {
+      "duration": 31.67,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            13.9,
+            33.0
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "GNUZK": {
+      "duration": 30.42,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            5.7
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "GQ341": {
+      "duration": 30.88,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            5.6,
+            32.0
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "GQT29": {
+      "duration": 31.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            6.2
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "GWQ73": {
+      "duration": 30.96,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            32.0
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "GYRNY": {
+      "duration": 31.62,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            33.0
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "H5DQ6": {
+      "duration": 30.83,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            2.6,
+            16.1
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "H7UYR": {
+      "duration": 30.54,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            32.0
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "HDCT0": {
+      "duration": 30.88,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            28.9,
+            32.0
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "HE8TC": {
+      "duration": 30.58,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            32.0
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "HSEH1": {
+      "duration": 31.25,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            20.6
+          ],
+          "label": "Fixing a light"
+        },
+        {
+          "segment": [
+            0.0,
+            25.8
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "HSWPR": {
+      "duration": 33.04,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            6.3,
+            34.0
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "HUU4X": {
+      "duration": 32.62,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            12.1,
+            31.9
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "HWLBL": {
+      "duration": 30.33,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            18.4
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "HZ3AM": {
+      "duration": 40.96,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            10.1,
+            25.2
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "I6IPP": {
+      "duration": 29.0,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            30.0
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "I9TIU": {
+      "duration": 34.83,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            2.7,
+            19.8
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "IABNL": {
+      "duration": 29.79,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            7.2,
+            31.0
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "IC89C": {
+      "duration": 52.21,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            22.6,
+            46.7
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "ICQUJ": {
+      "duration": 20.75,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            16.4
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "IEXTB": {
+      "duration": 32.46,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            3.4,
+            13.0
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "IHSRC": {
+      "duration": 31.21,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            26.1,
+            32.0
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "IK4Q8": {
+      "duration": 30.83,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            15.6,
+            32.0
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "IKK13": {
+      "duration": 32.5,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.4,
+            9.6
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "IKYAW": {
+      "duration": 30.75,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            12.5,
+            32.0
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "IN2RL": {
+      "duration": 38.12,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            32.9,
+            38.6
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "INA5N": {
+      "duration": 33.04,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            7.9,
+            12.6
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "IPNEG": {
+      "duration": 37.5,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            5.5,
+            38.4
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "IUBYO": {
+      "duration": 5.96,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            2.0,
+            7.0
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "J3KT5": {
+      "duration": 18.62,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            7.6,
+            20.0
+          ],
+          "label": "Washing a mirror"
+        },
+        {
+          "segment": [
+            8.2,
+            20.0
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "J3LY1": {
+      "duration": 36.12,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            12.6,
+            23.9
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "J56G6": {
+      "duration": 36.92,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            38.0
+          ],
+          "label": "Washing a window"
+        },
+        {
+          "segment": [
+            0.0,
+            38.0
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "J59UP": {
+      "duration": 30.83,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            5.9
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "J8SHW": {
+      "duration": 38.88,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            30.9,
+            40.0
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "J9T5D": {
+      "duration": 34.0,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            8.4,
+            15.1
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "JDDD8": {
+      "duration": 22.58,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            11.8,
+            24.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "JK4Q2": {
+      "duration": 30.92,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            5.6,
+            15.0
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "JL8XT": {
+      "duration": 32.62,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            24.1,
+            34.0
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "JNFCE": {
+      "duration": 31.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            19.4,
+            27.7
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "JQJSB": {
+      "duration": 28.83,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            7.9
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "JTXUA": {
+      "duration": 56.42,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            33.6,
+            54.2
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "JUINA": {
+      "duration": 32.38,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            5.9
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "JYG8P": {
+      "duration": 30.5,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            19.3
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "K7NRW": {
+      "duration": 30.71,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            13.2,
+            23.7
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "KAKSU": {
+      "duration": 31.08,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            4.0
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "KFI7N": {
+      "duration": 11.38,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            5.5,
+            10.0
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "KJOWG": {
+      "duration": 31.33,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            5.7,
+            29.1
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "KP53W": {
+      "duration": 30.75,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            10.2,
+            15.4
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "KW4Y1": {
+      "duration": 34.38,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            19.7,
+            33.0
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "KWHPI": {
+      "duration": 23.67,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            11.6,
+            25.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "KZR42": {
+      "duration": 30.88,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            8.2
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "L29HE": {
+      "duration": 16.71,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            8.7
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "L4FWN": {
+      "duration": 30.75,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            11.1,
+            17.1
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "L5YHH": {
+      "duration": 36.42,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            16.6,
+            27.9
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "LFC6D": {
+      "duration": 31.04,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            28.6,
+            32.0
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "LGJAR": {
+      "duration": 32.25,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            17.4,
+            33.0
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "LHTSI": {
+      "duration": 30.5,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.6,
+            21.9
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "LNEAG": {
+      "duration": 24.08,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            10.3,
+            21.7
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "LU82W": {
+      "duration": 11.58,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            1.0,
+            13.0
+          ],
+          "label": "Laughing at a picture"
+        },
+        {
+          "segment": [
+            0.0,
+            2.5
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "LURLC": {
+      "duration": 31.08,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            17.9
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "LW51F": {
+      "duration": 16.17,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            15.2
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "LY2GQ": {
+      "duration": 35.62,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            20.1,
+            25.9
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "LZUAY": {
+      "duration": 27.5,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            28.0
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "M5XBZ": {
+      "duration": 31.08,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            22.2
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "M8MP0": {
+      "duration": 31.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            25.8
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "M8NZA": {
+      "duration": 31.5,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            3.0,
+            32.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "MFOVZ": {
+      "duration": 30.67,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            7.8,
+            21.2
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "MLS4T": {
+      "duration": 25.33,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            2.3,
+            7.5
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "MME0V": {
+      "duration": 28.29,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            26.4,
+            29.0
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "MMKKS": {
+      "duration": 30.88,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            19.0,
+            23.5
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "MNC10": {
+      "duration": 21.08,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            7.6,
+            14.0
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "MQRFK": {
+      "duration": 22.67,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            13.2,
+            20.4
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "MR3ON": {
+      "duration": 15.83,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            17.0
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "MVX03": {
+      "duration": 33.38,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            31.4
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "N0G70": {
+      "duration": 31.0,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            9.1
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "N7ZBM": {
+      "duration": 30.46,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            8.8,
+            13.6
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "NAF1C": {
+      "duration": 37.04,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            26.6,
+            34.4
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "NAZ52": {
+      "duration": 34.17,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            11.0,
+            15.9
+          ],
+          "label": "Laughing at a picture"
+        },
+        {
+          "segment": [
+            4.8,
+            17.1
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "NEE6E": {
+      "duration": 28.38,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            6.3
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "NFXPI": {
+      "duration": 29.96,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            21.6,
+            31.0
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "NOSZ3": {
+      "duration": 8.83,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            10.0
+          ],
+          "label": "Fixing a light"
+        },
+        {
+          "segment": [
+            0.0,
+            10.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "NPEA3": {
+      "duration": 30.42,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            24.2,
+            31.0
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "NQMMJ": {
+      "duration": 33.71,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            35.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "NTW37": {
+      "duration": 22.5,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            14.5,
+            23.1
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "NU0UK": {
+      "duration": 30.12,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            8.0,
+            31.0
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "NW0KT": {
+      "duration": 49.33,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            42.6,
+            50.0
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "NXUA9": {
+      "duration": 31.46,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            2.6,
+            9.7
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "NY5R2": {
+      "duration": 29.12,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            5.6,
+            28.4
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "NZ6PU": {
+      "duration": 28.58,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            6.4,
+            30.0
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "O07KU": {
+      "duration": 23.96,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            2.3,
+            13.0
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "O6DZ0": {
+      "duration": 26.92,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            13.9
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "OE243": {
+      "duration": 29.75,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            6.9,
+            11.4
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "OGZYC": {
+      "duration": 36.04,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            26.2
+          ],
+          "label": "Washing a window"
+        },
+        {
+          "segment": [
+            0.2,
+            20.2
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "OIL1V": {
+      "duration": 15.42,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            12.0
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "OINMN": {
+      "duration": 45.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            27.4,
+            35.5
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "OJFYD": {
+      "duration": 19.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            10.9
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "OJVOV": {
+      "duration": 29.54,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            23.4,
+            31.0
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "OL2JP": {
+      "duration": 29.38,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            14.1
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "OLV1L": {
+      "duration": 32.79,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            4.9,
+            18.8
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "OMFOJ": {
+      "duration": 30.04,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            18.7
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "OMFVL": {
+      "duration": 30.83,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            6.8,
+            13.9
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "OP2SS": {
+      "duration": 31.42,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            23.9
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "ORPD5": {
+      "duration": 29.17,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            3.7,
+            16.5
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "OU3HS": {
+      "duration": 38.92,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            3.3,
+            27.9
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "P6S89": {
+      "duration": 32.17,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            11.8
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "P8Y27": {
+      "duration": 30.75,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            5.4,
+            10.6
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "PAS7F": {
+      "duration": 30.5,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            18.9,
+            27.3
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "PJ2NN": {
+      "duration": 30.04,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            15.3,
+            31.0
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "PROQY": {
+      "duration": 27.67,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            29.0
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "PS29P": {
+      "duration": 18.17,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            8.3,
+            13.7
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "PWTN2": {
+      "duration": 30.58,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            32.0
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "Q1SV4": {
+      "duration": 30.5,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            7.3,
+            31.0
+          ],
+          "label": "Fixing a vacuum"
+        },
+        {
+          "segment": [
+            1.1,
+            7.6
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "Q3BCC": {
+      "duration": 42.12,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            4.3,
+            41.2
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "QDZ38": {
+      "duration": 23.88,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            9.8,
+            15.6
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "QEXP4": {
+      "duration": 24.96,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            2.1,
+            9.6
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "QIQUA": {
+      "duration": 34.58,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            3.4,
+            16.2
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "QJPA0": {
+      "duration": 30.46,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            28.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "QLGHA": {
+      "duration": 31.29,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            8.5,
+            32.0
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "QYE21": {
+      "duration": 30.0,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            24.1
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "QZCSM": {
+      "duration": 12.0,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            10.3
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "R1B8I": {
+      "duration": 37.04,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            18.3
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "R1OUC": {
+      "duration": 40.29,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            29.9,
+            41.0
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "R3O7U": {
+      "duration": 38.08,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            1.4,
+            19.7
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "R5B50": {
+      "duration": 23.83,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            14.1
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "R6TI2": {
+      "duration": 30.12,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            26.6
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "RB9VI": {
+      "duration": 30.92,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            7.9,
+            14.9
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "RIE30": {
+      "duration": 18.88,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            3.0,
+            10.0
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "RJZ3I": {
+      "duration": 25.71,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            18.5,
+            23.0
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "RKGG5": {
+      "duration": 20.33,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            6.0,
+            10.7
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "RWPS8": {
+      "duration": 27.79,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            20.5,
+            29.0
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "RY8ZS": {
+      "duration": 30.17,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            15.1
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "S5KQ1": {
+      "duration": 30.17,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            11.7,
+            17.1
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "S5U92": {
+      "duration": 30.62,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            16.5,
+            32.0
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "S67HC": {
+      "duration": 31.04,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            21.8,
+            32.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "S67WR": {
+      "duration": 28.75,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            10.8,
+            26.0
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "SEDKM": {
+      "duration": 31.79,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.5,
+            6.5
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "SKUOZ": {
+      "duration": 9.12,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            10.0
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "SKZUG": {
+      "duration": 15.58,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            11.8
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "SLAH4": {
+      "duration": 15.46,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            4.0
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "SM1QV": {
+      "duration": 31.04,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            32.0
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "SN85M": {
+      "duration": 30.83,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            25.6,
+            30.6
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "SODJP": {
+      "duration": 28.04,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            29.0
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "SPF63": {
+      "duration": 29.08,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            24.1,
+            29.7
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "SPJIE": {
+      "duration": 26.96,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.6,
+            28.0
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "SU5W2": {
+      "duration": 24.17,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.1,
+            25.0
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "SV6KF": {
+      "duration": 22.25,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            9.3,
+            14.5
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "SVQL5": {
+      "duration": 23.79,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            19.3,
+            25.0
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "T9N9R": {
+      "duration": 30.08,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            14.4,
+            31.0
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "TCJWE": {
+      "duration": 30.67,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            6.3,
+            16.7
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "TIEA9": {
+      "duration": 30.75,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            5.5,
+            12.3
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "TK00O": {
+      "duration": 25.29,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            25.8
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "TLDYG": {
+      "duration": 19.62,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            10.1,
+            21.0
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "TLJRV": {
+      "duration": 42.71,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            14.9,
+            33.2
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "TNEEH": {
+      "duration": 28.42,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            14.1
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "TPSUY": {
+      "duration": 31.75,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            6.7,
+            11.9
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "TXJK7": {
+      "duration": 33.96,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.2,
+            11.9
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "TZL6H": {
+      "duration": 30.75,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            24.0,
+            32.0
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "TZV01": {
+      "duration": 31.42,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            17.1,
+            26.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "U1BQ0": {
+      "duration": 29.71,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            3.9
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "U9B0R": {
+      "duration": 31.0,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            24.4,
+            32.0
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "UIWY2": {
+      "duration": 28.54,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            2.0,
+            22.4
+          ],
+          "label": "Fixing a light"
+        },
+        {
+          "segment": [
+            0.6,
+            24.2
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "URAIM": {
+      "duration": 31.12,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            8.8,
+            21.8
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "UTLK1": {
+      "duration": 31.67,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            12.3,
+            33.0
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "UU5XI": {
+      "duration": 30.33,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            25.7
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "UVLL9": {
+      "duration": 20.54,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            22.0
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "UX0YW": {
+      "duration": 30.79,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            24.3,
+            30.9
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "V10LX": {
+      "duration": 31.75,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            12.8,
+            33.0
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "V149B": {
+      "duration": 31.5,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            21.3,
+            32.0
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "V2WXW": {
+      "duration": 25.38,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            11.1,
+            24.9
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "V3CWF": {
+      "duration": 26.71,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            6.2,
+            28.0
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "V4HBP": {
+      "duration": 31.08,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            25.2,
+            30.3
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "VDUO1": {
+      "duration": 35.54,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            18.4
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "VEH0A": {
+      "duration": 11.5,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            4.4
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "VJ3B5": {
+      "duration": 24.5,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            6.0,
+            10.2
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "VTOYP": {
+      "duration": 28.17,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            17.1
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "VXOE4": {
+      "duration": 31.25,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            10.1
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "W1KJ9": {
+      "duration": 18.54,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.8,
+            18.6
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "W3CPB": {
+      "duration": 19.96,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            10.4,
+            21.0
+          ],
+          "label": "Fixing a light"
+        },
+        {
+          "segment": [
+            8.7,
+            21.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "W6QUC": {
+      "duration": 31.0,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            3.4,
+            12.3
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "W8WRK": {
+      "duration": 33.0,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            29.3
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "WD12X": {
+      "duration": 31.42,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            24.8
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "WD6WB": {
+      "duration": 18.54,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            11.4,
+            20.0
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "WETXR": {
+      "duration": 29.79,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            31.0
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "WFJJE": {
+      "duration": 31.04,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            32.0
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "WFUK2": {
+      "duration": 20.5,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            10.3,
+            22.0
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "WK9HE": {
+      "duration": 33.96,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            13.9
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "WM2J7": {
+      "duration": 30.46,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            9.0
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "WMZME": {
+      "duration": 40.42,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            26.5
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "WQQ4Q": {
+      "duration": 40.04,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            24.3,
+            41.0
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "WRCO6": {
+      "duration": 16.17,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            4.4
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "WTBB2": {
+      "duration": 31.42,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            14.4,
+            32.0
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "WTUGM": {
+      "duration": 5.79,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            3.7
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "WXXYY": {
+      "duration": 35.25,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            26.4,
+            36.0
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "WYCRK": {
+      "duration": 29.71,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            18.4,
+            31.0
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "X084M": {
+      "duration": 35.0,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            1.9,
+            22.0
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "X4CZH": {
+      "duration": 34.88,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            10.7,
+            36.0
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "X4DG4": {
+      "duration": 10.79,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            1.9,
+            10.8
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "X817Z": {
+      "duration": 32.33,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            16.1,
+            33.0
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "X8DZV": {
+      "duration": 32.58,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            24.8,
+            30.1
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "XFRYR": {
+      "duration": 30.58,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            17.1
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "XHGV7": {
+      "duration": 39.33,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            22.3,
+            40.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "XKU2U": {
+      "duration": 32.38,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            14.0
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "XOOPP": {
+      "duration": 17.21,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            6.5,
+            18.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "XRR22": {
+      "duration": 49.46,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            10.6,
+            35.4
+          ],
+          "label": "Fixing a light"
+        },
+        {
+          "segment": [
+            6.9,
+            32.4
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "XSBZ1": {
+      "duration": 24.88,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            9.0,
+            15.0
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "XXDHJ": {
+      "duration": 23.83,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            8.3,
+            17.3
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "XXS99": {
+      "duration": 28.96,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            20.1,
+            27.0
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "Y063A": {
+      "duration": 30.21,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            6.0,
+            29.2
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "Y1BWP": {
+      "duration": 30.29,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            7.4,
+            14.5
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "Y2YO6": {
+      "duration": 29.79,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            31.0
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "Y5P4Q": {
+      "duration": 51.54,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.1,
+            53.0
+          ],
+          "label": "Standing on a chair"
+        }
+      ]
+    },
+    "Y89SO": {
+      "duration": 17.0,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            13.9
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "YCGJS": {
+      "duration": 30.62,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            12.9,
+            30.2
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "YFZRG": {
+      "duration": 30.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            3.9,
+            19.1
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "YLNPX": {
+      "duration": 37.96,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            5.2,
+            31.5
+          ],
+          "label": "Washing a mirror"
+        }
+      ]
+    },
+    "YUOQW": {
+      "duration": 33.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            34.0
+          ],
+          "label": "Laughing at a picture"
+        }
+      ]
+    },
+    "YX3W8": {
+      "duration": 28.08,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            8.6,
+            23.8
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "Z06HO": {
+      "duration": 29.25,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.2,
+            12.2
+          ],
+          "label": "Washing a window"
+        }
+      ]
+    },
+    "Z0IE9": {
+      "duration": 24.0,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            1.4,
+            17.4
+          ],
+          "label": "Fixing a light"
+        }
+      ]
+    },
+    "Z5URX": {
+      "duration": 55.88,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            57.0
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    },
+    "Z9W47": {
+      "duration": 23.04,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            10.9,
+            15.7
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "Z9WWJ": {
+      "duration": 24.08,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            3.3,
+            7.4
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "ZDK40": {
+      "duration": 30.29,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            17.6
+          ],
+          "label": "Fixing a doorknob"
+        }
+      ]
+    },
+    "ZED9E": {
+      "duration": 30.75,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            4.5,
+            9.4
+          ],
+          "label": "Fixing a vacuum"
+        }
+      ]
+    },
+    "ZI3ED": {
+      "duration": 30.79,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            5.4,
+            10.5
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "ZS7X6": {
+      "duration": 30.92,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            9.1,
+            15.0
+          ],
+          "label": "Throwing a box somewhere"
+        }
+      ]
+    },
+    "ZTWJB": {
+      "duration": 31.46,
+      "subset": "testing",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            5.3
+          ],
+          "label": "Throwing a broom somewhere"
+        }
+      ]
+    },
+    "ZZ9RN": {
+      "duration": 30.08,
+      "subset": "training",
+      "annotations": [
+        {
+          "segment": [
+            0.0,
+            8.3
+          ],
+          "label": "Making a sandwich"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,157 @@
+Closing a book
+Closing a box
+Closing a closet/cabinet
+Closing a door
+Closing a laptop
+Closing a refrigerator
+Closing a window
+Drinking from a cup/glass/bottle
+Eating a sandwich
+Fixing a door
+Fixing a doorknob
+Fixing a light
+Fixing a vacuum
+Fixing their hair
+Grasping onto a doorknob
+Holding a bag
+Holding a blanket
+Holding a book
+Holding a box
+Holding a broom
+Holding a cup/glass/bottle of something
+Holding a dish
+Holding a laptop
+Holding a mirror
+Holding a phone/camera
+Holding a picture
+Holding a pillow
+Holding a sandwich
+Holding a shoe/shoes
+Holding a towel/s
+Holding a vacuum
+Holding some clothes
+Holding some food
+Holding some medicine
+Laughing at a picture
+Laughing at television
+Lying on a bed
+Lying on a sofa/couch
+Lying on the floor
+Making a sandwich
+Opening a bag
+Opening a book
+Opening a box
+Opening a closet/cabinet
+Opening a door
+Opening a laptop
+Opening a refrigerator
+Opening a window
+Playing with a phone/camera
+Pouring something into a cup/glass/bottle
+Putting a bag somewhere
+Putting a blanket somewhere
+Putting a book somewhere
+Putting a box somewhere
+Putting a broom somewhere
+Putting a cup/glass/bottle somewhere
+Putting a dish/es somewhere
+Putting a laptop somewhere
+Putting a phone/camera somewhere
+Putting a picture somewhere
+Putting a pillow somewhere
+Putting a sandwich somewhere
+Putting a towel/s somewhere
+Putting clothes somewhere
+Putting groceries somewhere
+Putting on shoe/shoes
+Putting shoes somewhere
+Putting some food somewhere
+Putting something on a shelf
+Putting something on a table
+Putting their paper/notebook somewhere
+Reaching for and grabbing a picture
+Sitting at a table
+Sitting in a bed
+Sitting in a chair
+Sitting on a table
+Sitting on sofa/couch
+Sitting on the floor
+Smiling at a book
+Smiling in a mirror
+Snuggling with a blanket
+Snuggling with a pillow
+Someone is awakening in bed
+Someone is awakening somewhere
+Someone is cooking something
+Someone is dressing
+Someone is eating something
+Someone is going from standing to sitting
+Someone is holding a paper/notebook
+Someone is laughing
+Someone is running somewhere
+Someone is smiling
+Someone is sneezing
+Someone is standing up from somewhere
+Someone is undressing
+Standing on a chair
+Taking a bag from somewhere
+Taking a blanket from somewhere
+Taking a book from somewhere
+Taking a box from somewhere
+Taking a broom from somewhere
+Taking a cup/glass/bottle from somewhere
+Taking a dish/es from somewhere
+Taking a laptop from somewhere
+Taking a phone/camera from somewhere
+Taking a picture of something
+Taking a pillow from somewhere
+Taking a sandwich from somewhere
+Taking a towel/s from somewhere
+Taking a vacuum from somewhere
+Taking food from somewhere
+Taking off some shoes
+Taking paper/notebook from somewhere
+Taking shoes from somewhere
+Taking some clothes from somewhere
+Taking something from a box
+Taking/consuming some medicine
+Talking on a phone/camera
+Throwing a bag somewhere
+Throwing a blanket somewhere
+Throwing a book somewhere
+Throwing a box somewhere
+Throwing a broom somewhere
+Throwing a pillow somewhere
+Throwing a towel/s somewhere
+Throwing clothes somewhere
+Throwing food somewhere
+Throwing shoes somewhere
+Throwing something on the floor
+Tidying a shelf or something on a shelf
+Tidying some clothes
+Tidying something on the floor
+Tidying up a blanket/s
+Tidying up a closet/cabinet
+Tidying up a table
+Tidying up a towel/s
+Tidying up with a broom
+Turning off a light
+Turning on a light
+Walking through a doorway
+Wash a dish/dishes
+Washing a cup/glass/bottle
+Washing a mirror
+Washing a table
+Washing a window
+Washing some clothes
+Washing something with a towel
+Washing their hands
+Watching a laptop or something on a laptop
+Watching something/someone/themselves in a mirror
+Watching television
+Watching/Looking outside of a window
+Watching/Reading/Looking at a book
+Watching/looking at a picture
+Working at a table
+Working on paper/notebook
+Working/Playing on a laptop
