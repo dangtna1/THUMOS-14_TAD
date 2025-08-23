@@ -32,7 +32,7 @@ def load_rgb_frames(image_dir, ego_id, start, num):
             d = 226.0 - min(w, h)
             sc = 1 + d / min(w, h)
             img = cv2.resize(img, dsize=(0, 0), fx=sc, fy=sc)
-        img = (img / 255.0) * 2 - 1
+        img = (img.astype(np.float32) / 255.0) * 2 - 1
         frames.append(img)
     return np.asarray(frames, dtype=np.float32)
 
