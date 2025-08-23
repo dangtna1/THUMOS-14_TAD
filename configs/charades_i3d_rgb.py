@@ -66,6 +66,6 @@ workflow = dict(
     end_epoch=15,
 )
 
-sample_type = "exo_only_wise"  # Change this every time change the sample dataset
+sample_type = "early_fusion_wise"  # Change this every time change the sample dataset
 
 work_dir = f"exps/charades/actionformer_i3d_rgb/{sample_type}/"

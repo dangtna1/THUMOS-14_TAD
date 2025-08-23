@@ -1,7 +1,7 @@
 dataset_type = "CharadesPaddingDataset"
-annotation_path = "data/charades/annotations/wise_annotations/exo_only_training_charades.json"  # change
-class_map = "data/charades/annotations/wise_annotations/exo_only_training_category_idx.txt"  # change
-data_path = "data/complete_exo_ego_wise_v2/"
+annotation_path = "data/charades/annotations/wise_annotations/exo_only_testing_charades.json"  # change
+class_map = "data/charades/annotations/wise_annotations/exo_only_testing_category_idx.txt"  # change
+data_path = "data/complete_exo_ego_wise_v2_testing/"
 block_list = data_path + "missing_files.txt"
 
 trunc_len = 768
@@ -40,7 +40,7 @@ dataset = dict(
     val=dict(
         type=dataset_type,
         ann_file=annotation_path,
-        subset_name="training",
+        subset_name="testing",
         block_list=block_list,
         class_map=class_map,
         data_path=data_path,
@@ -65,7 +65,7 @@ dataset = dict(
     test=dict(
         type=dataset_type,
         ann_file=annotation_path,
-        subset_name="training",
+        subset_name="testing",
         block_list=block_list,
         class_map=class_map,
         data_path=data_path,
@@ -89,7 +89,7 @@ dataset = dict(
 
 evaluation = dict(
     type="mAP",
-    subset="training",
+    subset="testing",
     tiou_thresholds=[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9],
     ground_truth_filename=annotation_path,
 )
