@@ -10,11 +10,16 @@ class BaseDetector(torch.nn.Module):
 
     def forward(
         self,
-        inputs,
-        masks,
-        metas,
-        gt_segments=None,
-        gt_labels=None,
+        inputs_exo,
+        masks_exo,
+        metas_exo,
+        inputs_ego,
+        masks_ego,
+        metas_ego,
+        gt_segments_exo=None,
+        gt_labels_exo=None,
+        gt_segments_ego=None,
+        gt_labels_ego=None,
         return_loss=True,
         infer_cfg=None,
         post_cfg=None,
@@ -22,30 +27,64 @@ class BaseDetector(torch.nn.Module):
     ):
         if return_loss:
             return self.forward_train(
-                inputs,
-                masks,
-                metas,
-                gt_segments=gt_segments,
-                gt_labels=gt_labels,
-                **kwargs
+                inputs_exo=inputs_exo,
+                masks_exo=masks_exo,
+                metas_exo=metas_exo,
+                inputs_ego=inputs_ego,
+                masks_ego=masks_ego,
+                metas_ego=metas_ego,
+                gt_segments_exo=gt_segments_exo,
+                gt_labels_exo=gt_labels_exo,
+                gt_segments_ego=gt_segments_ego,
+                gt_labels_ego=gt_labels_ego,
+                **kwargs,
             )
         else:
             return self.forward_detection(
-                inputs, masks, metas, infer_cfg, post_cfg, **kwargs
+                input_exo=inputs_exo,
+                masks_exo=masks_exo,
+                metas_exo=metas_exo,
+                input_ego=inputs_ego,
+                masks_ego=masks_ego,
+                metas_ego=metas_ego,
+                infer_cfg=infer_cfg,
+                post_cfg=post_cfg,
+                **kwargs,
             )
 
-    def forward_detection(self, inputs, masks, metas, infer_cfg, post_cfg, **kwargs):
-        # step1: inference the model
-        if (
-            infer_cfg.load_from_raw_predictions
-        ):  # easier and faster to tune the hyper parameter in postprocessing
-            predictions = load_predictions(metas, infer_cfg)
+    def forward_detection(
+        self,
+        input_exo,
+        masks_exo,
+        metas_exo,
+        input_ego=None,
+        masks_ego=None,
+        metas_ego=None,
+        infer_cfg=None,
+        post_cfg=None,
+        **kwargs
+    ):
+        # step1: inference the model (load or run)
+        if infer_cfg is not None and getattr(
+            infer_cfg, "load_from_raw_predictions", False
+        ):
+            predictions = load_predictions(metas_exo, infer_cfg)
         else:
-            predictions = self.forward_test(inputs, masks, metas, infer_cfg)
-
-            if infer_cfg.save_raw_prediction:  # save the predictions to disk
-                save_predictions(predictions, metas, infer_cfg.folder)
+            predictions = self.forward_test(
+                inputs_exo=input_exo,
+                masks_exo=masks_exo,
+                metas_exo=metas_exo,
+                inputs_ego=input_ego,
+                masks_ego=masks_ego,
+                metas_ego=metas_ego,
+                infer_cfg=infer_cfg,
+                **kwargs,
+            )
+            if infer_cfg is not None and getattr(
+                infer_cfg, "save_raw_prediction", False
+            ):
+                save_predictions(predictions, metas_exo, infer_cfg.folder)
 
         # step2: detection post processing
-        results = self.post_processing(predictions, metas, post_cfg, **kwargs)
+        results = self.post_processing(predictions, metas_exo, post_cfg, **kwargs)
         return results

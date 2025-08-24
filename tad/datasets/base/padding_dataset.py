@@ -9,7 +9,8 @@ from ..builder import DATASETS, get_class_index
 class PaddingDataset:
     def __init__(
         self,
-        ann_file,  # json annotation file PATH
+        ann_file_exo,  # json annotation file PATH
+        ann_file_ego,  # json annotation file PATH
         subset_name,  # training, validation, testing
         data_path,  # raw video / pre-extracted feature folder PATH
         pipeline,  # data pipeline
@@ -28,7 +29,8 @@ class PaddingDataset:
         # super(PaddingDataset, self).__init__()
 
         # basic settings
-        self.ann_file = ann_file
+        self.ann_file_exo = ann_file_exo
+        self.ann_file_ego = ann_file_ego
         self.subset_name = subset_name
         self.data_path = data_path
         self.pipeline = Compose(pipeline)
@@ -47,11 +49,12 @@ class PaddingDataset:
         self.fps = fps
         self.snippet_stride = int(feature_stride * sample_stride)
 
-        self.get_dataset()  # self.data_list = [[video_name, video_info, video_anno], ...]
+        # Note: Get dataset for exo view only -> derive ego view later
+        self.get_dataset(self.ann_file_exo)
         self.logger(f"{self.subset_name} subset: {len(self.data_list)} videos")
 
-    def get_dataset(self):
-        with open(self.ann_file, "r") as f:
+    def get_dataset(self, ann_file):
+        with open(ann_file, "r") as f:
             anno_database = json.load(f)["database"]
 
         # some videos might be missed in the features or videos, we need to block them
@@ -66,25 +69,29 @@ class PaddingDataset:
 
         self.data_list = []
         for video_name, video_info in anno_database.items():
+            # Check if the ego view exists in the data folder
+            video_name_ego = video_name + "EGO.npy"
+            if not os.path.exists(os.path.join(self.data_path, video_name_ego)):
+                continue
             if (video_name in blocked_videos) or (
                 video_info["subset"] not in self.subset_name
             ):
                 continue
 
-            # get the ground truth annotation
-            if self.test_mode:
-                video_anno = {}
-            else:
-                video_anno = self.get_gt(video_info)
-                if video_anno == None:  # have no valid gt
-                    continue
+            # # get the ground truth annotation
+            # if self.test_mode:
+            #     video_anno = {}
+            # else:
+            #     video_anno = self.get_gt(video_info)
+            #     if video_anno == None:  # have no valid gt
+            #         continue
 
-            self.data_list.append([video_name, video_info, video_anno])
+            self.data_list.append(video_name)
         assert len(self.data_list) > 0, f"No data found in {self.subset_name} subset."
 
     def get_class_map(self, class_map_path):
         if not os.path.exists(class_map_path):
-            class_map = get_class_index(self.ann_file, class_map_path)
+            class_map = get_class_index(self.ann_file_exo, class_map_path)
             self.logger(
                 f"Class map is saved in {class_map_path}, total {len(class_map)} classes."
             )
@@ -94,7 +101,7 @@ class PaddingDataset:
             class_map = [item.rstrip("\n") for item in lines]
         return class_map
 
-    def get_gt(self, video_info):
+    def get_gt(self, ann_file, video_name):
         pass
 
     def __getitem__(self, index):

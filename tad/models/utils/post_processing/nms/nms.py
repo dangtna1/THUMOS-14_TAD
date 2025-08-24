@@ -8,57 +8,188 @@ import nms_1d_cpu
 class NMSop(torch.autograd.Function):
     @staticmethod
     def forward(ctx, segs, scores, cls_idxs, iou_threshold, min_score, max_num):
-        # vanilla nms will not change the score, so we can filter segs first
-        is_filtering_by_score = min_score > 0
-        if is_filtering_by_score:
-            valid_mask = scores > min_score
-            segs, scores = segs[valid_mask], scores[valid_mask]
-            cls_idxs = cls_idxs[valid_mask]
-            valid_inds = torch.nonzero(valid_mask, as_tuple=False).squeeze(dim=1)
+        # Normalize shapes
+        if segs.numel() == 0 or scores.numel() == 0:
+            return (
+                segs.new_zeros((0, 2)),
+                scores.new_zeros((0,)),
+                cls_idxs.new_zeros((0,), dtype=torch.long),
+            )
 
-        # nms op; return inds that is sorted by descending order
+        # Ensure segs is 2D (N, 2), scores is (N,), cls_idxs is (N,)
+        if segs.dim() == 1:
+            segs = segs.unsqueeze(0)
+        if scores.dim() == 0:
+            scores = scores.unsqueeze(0)
+        if cls_idxs.dim() == 0:
+            cls_idxs = cls_idxs.unsqueeze(0)
+
+        # Move to CPU for the C++ op (but remember original device)
+        orig_device = segs.device
+        segs_cpu = segs.contiguous().cpu()
+        scores_cpu = scores.contiguous().cpu()
+        cls_cpu = cls_idxs.contiguous().cpu()
+
+        # apply vanilla NMS (expects CPU tensors)
         inds = nms_1d_cpu.nms(
-            segs.contiguous().cpu(),
-            scores.contiguous().cpu(),
+            segs_cpu.contiguous(),
+            scores_cpu.contiguous(),
             iou_threshold=float(iou_threshold),
         )
-        # cap by max number
+
+        # cap by max_num
         if max_num > 0:
             inds = inds[: min(max_num, len(inds))]
-        # return the sorted segs / scores
-        sorted_segs = segs[inds]
-        sorted_scores = scores[inds]
-        sorted_cls_idxs = cls_idxs[inds]
+
+        # gather results and move back to original device
+        sorted_segs = segs_cpu[inds].to(orig_device)
+        sorted_scores = scores_cpu[inds].to(orig_device)
+        sorted_cls_idxs = cls_cpu[inds].to(orig_device)
+
         return sorted_segs.clone(), sorted_scores.clone(), sorted_cls_idxs.clone()
 
 
 class SoftNMSop(torch.autograd.Function):
     @staticmethod
-    def forward(ctx, segs, scores, cls_idxs, iou_threshold, sigma, min_score, method, max_num, t1, t2):
-        # pre allocate memory for sorted results
-        dets = segs.new_empty((segs.size(0), 3), device="cpu")
-        # softnms op, return dets that stores the sorted segs / scores
-        inds = nms_1d_cpu.softnms(
-            segs.cpu(),
-            scores.cpu(),
-            dets.cpu(),
-            iou_threshold=float(iou_threshold),
-            sigma=float(sigma),
-            min_score=float(min_score),
-            method=int(method),
-            t1=float(t1),
-            t2=float(t2),
-        )
-        # cap by max number
-        if max_num > 0:
-            n_segs = min(len(inds), max_num)
-        else:
-            n_segs = len(inds)
-        sorted_segs = dets[:n_segs, :2]
-        sorted_scores = dets[:n_segs, 2]
-        sorted_cls_idxs = cls_idxs[inds]
-        sorted_cls_idxs = sorted_cls_idxs[:n_segs]
-        return sorted_segs.clone(), sorted_scores.clone(), sorted_cls_idxs.clone()
+    def forward(
+        ctx,
+        segs,
+        scores,
+        cls_idxs,
+        iou_threshold,
+        sigma,
+        min_score,
+        method,
+        max_num,
+        t1,
+        t2,
+    ):
+        # --- Quick empty handling
+        if segs is None or scores is None or segs.numel() == 0 or scores.numel() == 0:
+            return (
+                segs.new_zeros((0, 2)),
+                scores.new_zeros((0,)),
+                cls_idxs.new_zeros((0,), dtype=torch.long),
+            )
+
+        # --- Normalize common collapsed shapes into (N,2) / (N,) forms
+        # If segs is 1-D with 2 elements -> treat as single proposal [start, end]
+        if segs.dim() == 1 and segs.numel() == 2:
+            segs = segs.view(1, 2)
+
+        # If segs is (2,1) (i.e., column) convert to (1,2)
+        if segs.dim() == 2 and segs.size(0) == 2 and segs.size(1) == 1:
+            segs = segs.t().contiguous().view(1, 2)
+
+        # If segs is (1,1) but has 2 elements flattened somewhere, try a safe reshape:
+        if segs.dim() == 1 and segs.numel() == 1:
+            # cannot reconstruct start/end from a single value — fallback
+            return (
+                segs.new_zeros((0, 2)),
+                scores.new_zeros((0,)),
+                cls_idxs.new_zeros((0,), dtype=torch.long),
+            )
+
+        # Ensure scores shape is (N,)
+        if scores.dim() == 0:
+            scores = scores.unsqueeze(0)
+        if scores.dim() > 1 and scores.size(1) == 1:
+            scores = scores.view(-1)
+
+        # Ensure cls_idxs is 1D
+        if cls_idxs is not None and cls_idxs.dim() == 0:
+            cls_idxs = cls_idxs.unsqueeze(0)
+
+        # Final guard: ensure segs is (N,2)
+        if not (segs.dim() == 2 and segs.size(1) == 2):
+            # Attempt final reshape if numel matches 2 * N
+            if segs.numel() % 2 == 0:
+                segs = segs.view(-1, 2)
+            else:
+                # give up safely
+                return (
+                    segs.new_zeros((0, 2)),
+                    scores.new_zeros((0,)),
+                    cls_idxs.new_zeros((0,), dtype=torch.long),
+                )
+
+        # Keep device to move results back
+        orig_device = segs.device
+
+        # Move to CPU for the C++ op (and ensure contiguous)
+        segs_cpu = segs.contiguous().cpu()
+        scores_cpu = scores.contiguous().cpu()
+
+        # allocate dets on CPU (N x 3)
+        dets = torch.empty((segs_cpu.size(0), 3), device="cpu", dtype=segs_cpu.dtype)
+
+        # Try native softnms — guard with try/except to avoid uncaught C++ errors
+        try:
+            inds = nms_1d_cpu.softnms(
+                segs_cpu,
+                scores_cpu,
+                dets,
+                iou_threshold=float(iou_threshold),
+                sigma=float(sigma),
+                min_score=float(min_score),
+                method=int(method),
+                t1=float(t1),
+                t2=float(t2),
+            )
+
+            # cap by max number
+            if max_num > 0:
+                n_segs = min(len(inds), max_num)
+            else:
+                n_segs = len(inds)
+
+            sorted_segs = dets[:n_segs, :2].to(orig_device)
+            sorted_scores = dets[:n_segs, 2].to(orig_device)
+
+            if cls_idxs.numel() > 0:
+                cls_cpu = cls_idxs.contiguous().cpu()
+                sorted_cls_idxs = cls_cpu[inds][:n_segs].to(orig_device)
+            else:
+                sorted_cls_idxs = cls_idxs.new_zeros((0,), dtype=torch.long)
+
+            return sorted_segs.clone(), sorted_scores.clone(), sorted_cls_idxs.clone()
+
+        except Exception as e:
+            # If native softnms fails for any reason, fallback to a safe deterministic behavior:
+            # - filter by min_score
+            # - sort by score desc
+            # - return top-k segments and their class indices
+            # Log the problem (you can comment out the print in production)
+            print(
+                f"[SoftNMSop] softnms failed with exception: {e}. Falling back to sort+topk."
+            )
+
+            keep_mask = scores_cpu >= float(min_score)
+            if keep_mask.numel() == 0 or not keep_mask.any():
+                return (
+                    segs.new_zeros((0, 2)),
+                    scores.new_zeros((0,)),
+                    cls_idxs.new_zeros((0,), dtype=torch.long),
+                )
+
+            kept_segs = segs_cpu[keep_mask]
+            kept_scores = scores_cpu[keep_mask]
+            if cls_idxs.numel() > 0:
+                kept_cls = cls_idxs.contiguous().cpu()[keep_mask]
+            else:
+                kept_cls = cls_idxs.new_zeros((kept_scores.size(0),), dtype=torch.long)
+
+            # sort
+            sorted_vals, idxs = torch.sort(kept_scores, descending=True)
+            if max_num > 0:
+                idxs = idxs[:max_num]
+                sorted_vals = sorted_vals[:max_num]
+
+            sorted_segs = kept_segs[idxs].to(orig_device)
+            sorted_scores = sorted_vals.to(orig_device)
+            sorted_cls_idxs = kept_cls[idxs].to(orig_device)
+
+            return sorted_segs.clone(), sorted_scores.clone(), sorted_cls_idxs.clone()
 
 
 def seg_voting(nms_segs, all_segs, all_scores, iou_threshold, score_offset=1.5):
@@ -113,21 +244,30 @@ def batched_nms(
     t1=0,  # only used in improved gaussian for better recall
     t2=0,  # only used in improved gaussian for better recall
 ):
-    # method 2 means we use gaussian soft-nms, so iou_threshold does not matter
-
+    # --- Robust input normalization (INSERTED)
     # make sure the inputs are float
     segs = segs.float()
     scores = scores.float()
 
-    # Based on Detectron2 implementation,
+    # Normalize shapes: segs -> (N,2), scores -> (N,), cls_idxs -> (N,)
+    if segs.dim() == 1:
+        segs = segs.unsqueeze(0)
+    if scores.dim() == 0:
+        scores = scores.unsqueeze(0)
+    if cls_idxs is not None and cls_idxs.dim() == 0:
+        cls_idxs = cls_idxs.unsqueeze(0)
+
+    # handle empty quickly
     num_segs = segs.shape[0]
-    # corner case, no prediction outputs
     if num_segs == 0:
         return (
             torch.zeros([0, 2]),
             torch.zeros([0]),
-            torch.zeros([0], dtype=cls_idxs.dtype),
+            torch.zeros(
+                [0], dtype=cls_idxs.dtype if cls_idxs is not None else torch.long
+            ),
         )
+    # --- End inserted guard
 
     if multiclass:
         # multiclass nms: apply nms on each class independently

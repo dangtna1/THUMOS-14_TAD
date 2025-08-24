@@ -71,13 +71,18 @@ def main():
     )
 
     # Debug
-    batch = next(iter(train_loader))
-    print(batch.keys())
-    print(batch["inputs"].shape)
-    print(batch["masks"].shape)
-    print(batch["gt_segments"])
-    print(batch["gt_labels"])
-    print(batch["metas"])
+    # batch = next(iter(train_loader))
+    # print(batch.keys())
+    # print(batch["inputs_exo"].shape)
+    # print(batch["masks_exo"].shape)
+    # print(batch["inputs_ego"].shape)
+    # print(batch["masks_ego"].shape)
+    # print(batch["gt_segments_exo"])
+    # print(batch["gt_labels_exo"])
+    # print(batch["gt_segments_ego"])
+    # print(batch["gt_labels_ego"])
+    # print(batch["metas_exo"])
+    # print(batch["metas_ego"])
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

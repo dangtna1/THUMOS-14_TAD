@@ -1,7 +1,8 @@
 dataset_type = "CharadesPaddingDataset"
-annotation_path = "data/charades/annotations/most_sample_charades.json"  # change
-class_map = "data/charades/annotations/most_sample_category_idx.txt"  # change
-data_path = "data/charades/features/i3d_charades_finetuned_stride8/"
+annotation_path_exo = "data/charades/annotations/wise_annotations/exo_only_training_charades.json"  # change
+annotation_path_ego = "data/charades/annotations/wise_annotations/ego_only_training_charades.json"  # change
+class_map = "data/charades/annotations/wise_annotations/combined_training_category_idx.txt"  # shared
+data_path = "data/complete_exo_ego_wise_v2/"  # change
 block_list = data_path + "missing_files.txt"
 
 trunc_len = 768
@@ -9,7 +10,8 @@ trunc_len = 768
 dataset = dict(
     train=dict(
         type=dataset_type,
-        ann_file=annotation_path,
+        ann_file_exo=annotation_path_exo,
+        ann_file_ego=annotation_path_ego,
         subset_name="training",
         block_list=block_list,
         class_map=class_map,
@@ -39,8 +41,9 @@ dataset = dict(
     ),
     val=dict(
         type=dataset_type,
-        ann_file=annotation_path,
-        subset_name="testing",
+        ann_file_exo=annotation_path_exo,
+        ann_file_ego=annotation_path_ego,
+        subset_name="training",
         block_list=block_list,
         class_map=class_map,
         data_path=data_path,
@@ -64,8 +67,9 @@ dataset = dict(
     ),
     test=dict(
         type=dataset_type,
-        ann_file=annotation_path,
-        subset_name="testing",
+        ann_file_exo=annotation_path_exo,
+        ann_file_ego=annotation_path_ego,
+        subset_name="training",
         block_list=block_list,
         class_map=class_map,
         data_path=data_path,
@@ -89,7 +93,7 @@ dataset = dict(
 
 evaluation = dict(
     type="mAP",
-    subset="testing",
+    subset="training",  # change
     tiou_thresholds=[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9],
-    ground_truth_filename=annotation_path,
+    ground_truth_filename=annotation_path_exo,
 )

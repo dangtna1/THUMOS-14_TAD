@@ -29,6 +29,31 @@ model = dict(
             ],
         ),
     ),
+    projection_ego=dict(
+        in_channels=1024,
+        arch=(2, 2, 6),  # old: (2, 2, 6)
+        attn_cfg=dict(n_mha_win_size=-1),
+        use_abs_pe=True,
+        max_seq_len=768,
+        input_pdrop=0.3,
+    ),
+    neck_ego=dict(num_levels=7),
+    rpn_head_ego=dict(
+        num_classes=10,  # Change to 10 for Charades sample - change the ground truth labels as well
+        prior_generator=dict(
+            type="PointGenerator",
+            strides=[1, 2, 4, 8, 16, 32, 64],
+            regression_range=[
+                (0, 4),
+                (4, 8),
+                (8, 16),
+                (16, 32),
+                (32, 64),
+                (64, 128),
+                (128, 10000),
+            ],
+        ),
+    ),
 )
 
 solver = dict(
@@ -66,8 +91,6 @@ workflow = dict(
     end_epoch=15,
 )
 
-sample_type = (
-    "whole_video_most_sample"  # Change this every time change the sample dataset
-)
+sample_type = "late_fusion_wise"  # Change this every time change the sample dataset
 
 work_dir = f"exps/charades/actionformer_i3d_rgb/{sample_type}/"

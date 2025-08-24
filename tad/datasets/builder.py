@@ -13,9 +13,7 @@ def build_dataset(cfg, default_args=None):
     return dataset
 
 
-def build_dataloader(
-    dataset, batch_size, shuffle=False, drop_last=False, **kwargs
-):
+def build_dataloader(dataset, batch_size, shuffle=False, drop_last=False, **kwargs):
     dataloader = torch.utils.data.DataLoader(
         dataset,
         batch_size=batch_size,
@@ -33,7 +31,7 @@ def collate(batch):
     if not isinstance(batch, Sequence):
         raise TypeError(f"{batch.dtype} is not supported.")
 
-    gpu_stack_keys = ["inputs", "masks"]
+    gpu_stack_keys = ["inputs_ego", "inputs_exo", "masks_exo", "masks_ego"]
 
     collate_data = {}
     for key in batch[0]:
