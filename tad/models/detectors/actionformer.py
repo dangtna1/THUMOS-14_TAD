@@ -388,21 +388,52 @@ class ActionFormer(SingleStageDetector):
             ego_weight=0.5,
         )
 
-        # Return first batch element (assumes batch size 1)
-        fused_props_tensor = fused_props_batch[0]
-        fused_scores_tensor = fused_scores_batch[0]
+        print(f"Fused Props: {len(fused_props_batch)}")
+        print(f"Fused Scores: {len(fused_scores_batch)}")
 
-        # Ensure 2D even if empty
-        if fused_props_tensor.ndim == 1:
-            fused_props_tensor = fused_props_tensor.unsqueeze(0)
-        if fused_scores_tensor.ndim == 1:
-            fused_scores_tensor = fused_scores_tensor.unsqueeze(0)
+        batch_props = []
+        batch_scores = []
+        for i in range(len(fused_props_batch)):  # batch size
+            props = fused_props_batch[i]
+            scores = fused_scores_batch[i]
 
-        # If completely empty, skip NMS
-        if fused_props_tensor.numel() == 0:
-            return fused_props_tensor, fused_scores_tensor
+            # ensure 2D shape for props
+            if props.ndim == 1:
+                props = props.unsqueeze(0)
+            if scores.ndim == 0:  # scalar
+                scores = scores.unsqueeze(0)
 
-        return fused_props_tensor, fused_scores_tensor
+            # skip if empty
+            if props.numel() == 0:
+                batch_props.append(props)
+                batch_scores.append(scores)
+                continue
+
+            # run NMS or keep as is
+            batch_props.append(props)
+            batch_scores.append(scores)
+
+        return batch_props, batch_scores
+
+        # # TESTING
+        # if self.with_backbone:
+        #     x_exo = self.backbone(inputs_exo)
+        # else:
+        #     x_exo = inputs_exo
+
+        # x_exo, masks_exo = self.pad_data(x_exo, masks_exo)
+
+        # if self.with_projection:
+        #     x_exo, masks_exo = self.projection(x_exo, masks_exo)
+
+        # if self.with_neck:
+        #     x_exo, masks_exo = self.neck(x_exo, masks_exo)
+
+        # rpn_proposals, rpn_scores = self.rpn_head.forward_test(
+        #     x_exo, masks_exo, **kwargs
+        # )
+        # predictions = rpn_proposals, rpn_scores
+        # return predictions
 
     def get_optim_groups(self, cfg):
         # separate out all parameters that with / without weight decay
