@@ -12,7 +12,10 @@ The following table lists the benchmark datasets for the project:
 There are two branches:
 * main: final code for late fusion
 * exo-stream: final code for early fusion, one stream implementation
-NOTE: For keep up-to-date to the project, Please refer to this [repo](https://github.com/dangtna1/THUMOS-14_TAD/tree/main)
+
+**NOTE 1**: For keep up-to-date to the project, Please refer to this [repo](https://github.com/dangtna1/THUMOS-14_TAD/tree/main)
+
+**NOTE 2**: since data/ and exps/ folders are too large, I can't upload it, If you want to know more about these two, please contact me: dangvuintheuk@gmail.com
 
 ## Sampling Charades dataset for experiments
 Please refer to [this notebook](notebooks\charades_sample_building.ipynb)
